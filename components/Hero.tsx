@@ -40,6 +40,13 @@ export default function Hero() {
               Get in Touch
             </a>
             <a
+              href="/resume.pdf"
+              download="Adil_Mallick_Resume.pdf"
+              className="bg-purple-600 text-white px-10 py-4 rounded-full font-semibold shadow-xl hover:transform hover:-translate-y-1 hover:bg-purple-700 transition-all"
+            >
+              Download Resume
+            </a>
+            <a
               href="https://github.com/AdilRMallick"
               target="_blank"
               className="bg-transparent text-white border-2 border-white px-10 py-4 rounded-full font-semibold hover:bg-white hover:bg-opacity-20 transition-all"
