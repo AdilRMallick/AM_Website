@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 export default function Hero() {
     return (
@@ -7,6 +8,20 @@ export default function Hero() {
         className="min-h-screen flex items-center justify-center text-center px-8 fade-in-up"
       >
         <div className="max-w-4xl">
+          {/* Profile Picture */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              <Image
+                src="/profile-picture.jpg"
+                alt="Adil R. Mallick"
+                width={200}
+                height={200}
+                className="rounded-full border-4 border-white shadow-2xl hover:scale-105 transition-transform duration-300"
+                priority
+              />
+            </div>
+          </div>
+          
           <h1 className="text-6xl font-bold mb-4 drop-shadow-lg">
             Adil R. Mallick
           </h1>
