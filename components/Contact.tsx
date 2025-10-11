@@ -31,7 +31,7 @@ export default function Contact() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/adil-mallick"
+            href="https://www.linkedin.com/in/adil-mallick-5332662a7"
             target="_blank"
             className="border-2 border-white border-opacity-50 px-6 py-3 rounded-full font-medium hover:bg-white hover:bg-opacity-20 hover:border-white transition-all"
           >
