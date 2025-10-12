@@ -43,24 +43,24 @@ interface ExperienceItem {
   
   export default function Experience() {
     return (
-      <section id="experience" className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Experience</h2>
-        <div className="flex flex-col gap-8">
+      <section id="experience" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Experience</h2>
+        <div className="flex flex-col gap-6 sm:gap-8">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl p-8 border border-white border-opacity-20 hover:transform hover:translate-x-2 transition-all"
+              className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-white border-opacity-20 hover:transform hover:translate-x-2 transition-all"
             >
-              <div className="flex justify-between items-start flex-wrap gap-4 mb-4">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 sm:gap-4 mb-4">
                 <div>
-                  <h3 className="text-3xl font-bold mb-1">{exp.company}</h3>
-                  <p className="text-xl opacity-90 font-medium">{exp.role}</p>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-1">{exp.company}</h3>
+                  <p className="text-lg sm:text-xl opacity-90 font-medium">{exp.role}</p>
                 </div>
-                <p className="opacity-80 text-sm">{exp.date}</p>
+                <p className="opacity-80 text-sm sm:text-base">{exp.date}</p>
               </div>
-              <ul className="list-disc ml-6 space-y-2">
+              <ul className="list-disc ml-4 sm:ml-6 space-y-2">
                 {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="opacity-90">
+                  <li key={i} className="opacity-90 text-sm sm:text-base">
                     {achievement}
                   </li>
                 ))}

@@ -30,25 +30,25 @@ interface Project {
   
   export default function Projects() {
     return (
-      <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Featured Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+      <section id="projects" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 max-w-6xl mx-auto">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">Featured Projects</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl p-8 border border-white border-opacity-20 hover:transform hover:-translate-y-2 transition-all"
+              className="bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-white border-opacity-20 hover:transform hover:-translate-y-2 transition-all"
             >
-              <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-              <p className="text-sm opacity-80 italic mb-4">{project.tech}</p>
+              <h3 className="text-xl sm:text-2xl font-bold mb-2">{project.title}</h3>
+              <p className="text-xs sm:text-sm opacity-80 italic mb-4">{project.tech}</p>
               {project.description.map((desc, i) => (
-                <p key={i} className="opacity-90 mb-3 text-sm">
+                <p key={i} className="opacity-90 mb-3 text-xs sm:text-sm">
                   {desc}
                 </p>
               ))}
               <a
                 href={project.link}
                 target="_blank"
-                className="inline-block text-white font-semibold border-b-2 border-white pb-1 hover:opacity-70 transition-opacity"
+                className="inline-block text-white font-semibold border-b-2 border-white pb-1 hover:opacity-70 transition-opacity text-sm sm:text-base"
               >
                 View on GitHub →
               </a>
